@@ -138,6 +138,14 @@ Add this to your `claude_desktop_config.json`:
 }
 ```
 
+### GitHub Docker Registry Publishing
+
+To publish the Docker image to the GitHub Docker registry, follow these steps:
+
+1. Ensure you have a GitHub account and create a repository for your image.
+2. Set up GitHub secrets for `GITHUB_TOKEN` in your repository settings.
+3. The GitHub Actions workflow will automatically build and push the Docker image to the registry on every push to the `main` branch and on every release.
+
 ## Installation
 
 ### Python Package
